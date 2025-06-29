@@ -56,5 +56,35 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="01bases de datos a revisar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="01bases de datos a revisar\RutasAutobus.sql" />
+    <Build Include="01bases de datos a revisar\01 Vuelos.sql" />
+    <Build Include="01bases de datos a revisar\02 Automovil.sql" />
+    <Build Include="01bases de datos a revisar\03 Active ID.sql" />
+    <Build Include="01bases de datos a revisar\04 Active ID PARTE 2.sql" />
+    <Build Include="01bases de datos a revisar\05 BDRRHH.sql" />
+    <Build Include="01bases de datos a revisar\06 Data RRHH.sql" />
+    <Build Include="01bases de datos a revisar\07 BDRRHH.sql" />
+    <Build Include="01bases de datos a revisar\06 DB &amp; Data RRHH.sql" />
+    <Build Include="01bases de datos a revisar\BDRRHH.sql" />
+    <Build Include="01bases de datos a revisar\barrio.sql" />
+    <Build Include="01bases de datos a revisar\canton.sql" />
+    <Build Include="01bases de datos a revisar\distrito.sql" />
+    <Build Include="01bases de datos a revisar\MenteCuerpo.sql" />
+    <Build Include="01bases de datos a revisar\pais.sql" />
+    <Build Include="01bases de datos a revisar\Persona.sql" />
+    <Build Include="01bases de datos a revisar\provincia.sql" />
+    <Build Include="01bases de datos a revisar\Query Actives.sql" />
+    <Build Include="01bases de datos a revisar\RecursosHumanosDB.sql" />
+    <Build Include="01bases de datos a revisar\SEVRI.sql" />
+    <Build Include="01bases de datos a revisar\scriptBD.sql" />
+    <Build Include="01bases de datos a revisar\vuelos.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="01bases de datos a revisar\ProyectoII.txt" />
+    <None Include="01bases de datos a revisar\Ubicaciones.zip" />
+    <None Include="01bases de datos a revisar\vistas.txt" />
   </ItemGroup>
 </Project>
