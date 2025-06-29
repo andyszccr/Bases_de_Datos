@@ -81,10 +81,16 @@
     <Build Include="01bases de datos a revisar\SEVRI.sql" />
     <Build Include="01bases de datos a revisar\scriptBD.sql" />
     <Build Include="01bases de datos a revisar\vuelos.sql" />
+    <Build Include="01bases de datos a revisar\Hotel Prado.sql" />
+    <Build Include="01bases de datos a revisar\ProyectoWEB.sql" />
+    <Build Include="01bases de datos a revisar\Proyecto_V2.sql" />
+    <Build Include="01bases de datos a revisar\Proyecto1 Admin Software SA.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="01bases de datos a revisar\ProyectoII.txt" />
     <None Include="01bases de datos a revisar\Ubicaciones.zip" />
     <None Include="01bases de datos a revisar\vistas.txt" />
+    <None Include="01bases de datos a revisar\creacion de diagrama de bases de datos %281).txt" />
+    <None Include="01bases de datos a revisar\conexion%28relacion de tablas).txt" />
   </ItemGroup>
 </Project>
