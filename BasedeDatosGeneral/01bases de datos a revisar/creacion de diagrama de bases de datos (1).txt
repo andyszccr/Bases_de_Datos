@@ -1,0 +1,108 @@
+Empresa Software S.A
+
+Producto de venta 
+
+---------------------------------------
+tablas principales
+---------------------------------------
+Tabla de Empleados * ///
+Tabla de salarios    ///
+Tabla de Contratos   ///
+Tabla de Logueo 
+Tabla de Departamento   ///
+tabla de incapacidades  ///
+tabla de historial *   /// muestre reporte 
+----------------------------------------
+
+tabla empleado ****
+
+identificacion 
+nombre 
+primer apellido 
+sgundo apellido
+ 
+idpuesto FK  -idpuesto PK ***
+	     -puesto 
+ 
+idsalario FK  -idSAariio Pk
+	      -salario minimo mensual
+	      -salario maximo mensual 
+direccion
+telefono 	  
+		   -IDDEpartamento
+idDepartamento FK  - fecha de ingreso 
+		   - nombre del departamento
+		   -Asocicion -> pertenece o no pertence
+		   estado -> activo o inactivo 
+
+Idcuenta  FK - idCuenta 
+	     - numero de cuenta 
+----------------------------------------------------------
+tabla incapacidad 
+
+IdIdentificacion 
+Nombre 
+Apellidos 
+fechaInicio Incapacidad
+FechaFinalizacion Incapacidad
+Cantidaddias
+idSalarios ->  -idsalario 
+	       -salariobruto
+	       -pago incapacidad
+	       -pago CCSS
+	       -banco popular
+	       -Asociacion
+	       -salario asociacion 3% y 0%
+
+----------------------------------------------
+tabla de historial 
+identifiacion 
+nombre 
+apellidos
+fecha indicadas 
+salario
+
+-----------------------------------------
+actualizacion de tablas  28/01/2021
+------------------------------------------
+create table incapacidad
+(
+cedula int not null,
+fechaInicio date not null,
+fechaFinalizacion date not null,
+CantidadDias int not null,
+IdSalarios int not null
+);
+
+create table CSalario
+(
+idsalario int not null,
+salariobruto decimal(18,1)not null,
+pagoIncapacidad decimal(18,1)not null,
+pagoCCSS decimal(18,1) not null,
+BancoPopular decimal(18,1)not null,
+Asociacion bit not null,
+salario decimal(18,1) not null 
+);
+alter table incapacidad add primary key (cedula);
+alter table CSalario add primary key (idsalario);
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+alter table login add primary key (cedula);
+
+alter table empleado add constraint [fkEmpleado_Login] foreign key (cedula)
+references login (cedula);
+
+alter table empleado check constraint [fkEmpleado_Login];
+--********************************************************************
+alter table empleado add constraint [fkEmpleado_Puesto] foreign key (idpuesto)
+references puestos (IDpuesto);
+
+alter table empleado check constraint [fkEmpleado_Puesto];
+
+--**********************************************************************
+alter table empleado add constraint [fkEmpleado_Departamento] foreign key(idDepartamento)
+references Departamentos (idDepartamento);
+
+alter table empleado check constraint [fkEmpleado_Departamento];
+--***************************************************************************
+alter table empleado add constraint [FkEmpleado_Cuenta] foreign key (idCuenta)
+references Cuenta (idcuenta);
+
+alter table empleado check constraint [FkEmpleado_Cuenta];
+
+--*******************************************************************************
+alter table empleado add constraint [FKEmpleado_Incapacidad] foreign key (cedula)
+references incapacidad(cedula);
+
+alter table empleado check constraint [FKEmpleado_Incapacidad];
+
+--***************************************************************************
+alter table empleado add constraint [FKEmpleado_Salario] foreign key (idsalario)
+references Salarios (idSalario);
+
+alter table empleado check constraint [FKEmpleado_Salario];
+--****************************************************************************
+alter table incapacidad add constraint [FKIncapacidad_Salario] foreign key (IdSalarios)
+references CSalario (idsalario);
+
+alter table incapacidad check constraint [FKIncapacidad_Salario];
